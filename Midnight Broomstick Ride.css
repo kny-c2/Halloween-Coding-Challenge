@@ -1,3 +1,33 @@
+main {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 30px;
+    width: 75%;
+    margin-left: 11%;
+}
+
+body {
+    margin: 0;
+    font-size: 23px;
+    color: #F1E9D2;
+  position: relative;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -4%;
+  z-index: -1;
+  background: url("assets/images/Tree2.jpg") center / cover no-repeat;
+  animation: trees-sway 6s ease-in-out infinite alternate;
+}
+
+@keyframes trees-sway {
+  from { transform: translate3d(-1.5%, 0, 0) scale(1.04); }
+  to { transform: translate3d(1.5%, 0, 0) scale(1.08); }
+}
+
+
 /* Halloween Color Palette & Variables */
 :root {
   --pumpkin: #ff7518;
