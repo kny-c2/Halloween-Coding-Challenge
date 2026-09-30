@@ -22,6 +22,16 @@ body::before {
   animation: trees-sway 6s ease-in-out infinite alternate;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  border: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 0 90px 24px rgba(0, 0, 0, 0.72);
+  pointer-events: none;
+}
+
 @keyframes trees-sway {
   from { transform: translate3d(-1.5%, 0, 0) scale(1.04); }
   to { transform: translate3d(1.5%, 0, 0) scale(1.08); }
