@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Haunted Harvest: Midnight Broomstick Ride</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="haunted-harvest.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>🎃 Midnight Broomstick Ride 🎃</h1>
+    <!-- CSS-only chapter navigation (uses :target) -->
+    <nav aria-label="Story chapters">
+      <a href="#ch1">1. The Ride</a>
+      <a href="#ch2">2. The Wagon</a>
+      <a href="#ch3">3. The Storm</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ANIMATED SCENE: same loop in every chapter; chapters change the mood -->
+    <div class="world" role="img"
+         aria-label="Animated night scene: a witch on a broomstick trailing sparks, owls flying, a couple waving from a hay wagon, drifting clouds, fog and moving trees under a full moon.">
+
+      <div class="moon"></div>
+      <div class="flash"></div>
+
+      <span class="cloud c1"></span>
+      <span class="cloud c2"></span>
+      <span class="cloud c3"></span>
+
+      <span class="owl o1">🦉</span>
+      <span class="owl o2">🦉</span>
+      <span class="bat b1">🦇</span>
+      <span class="bat b2">🦇</span>
+
+      <div class="witch">
+        <span class="sparks"><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="rider">🧙‍♀️🧹</span>
+      </div>
+
+      <div class="trees"><span>🌲🌳🎃🌲🌲🌳🌲🎃🌳🌲🌲🌳</span><span>🌲🌳🎃🌲🌲🌳🌲🎃🌳🌲🌲🌳</span></div>
+
+      <div class="wagon">
+        <span class="horse">🐴</span>
+        <div class="hay">
+          <span class="person">👩<b class="hand">👋</b></span>
+          <span class="person">👨<b class="hand">👋</b></span>
+        </div>
+        <span class="wheel w1"></span>
+        <span class="wheel w2"></span>
+      </div>
+
+      <div class="ground"></div>
+      <div class="fog f1"></div>
+      <div class="fog f2"></div>
+    </div>
+
+    <!-- CHAPTER TEXT: first one shows by default, links switch with :target -->
+    <div class="chapters">
+      <section id="ch1" class="chapter">
+        <h2>Chapter 1: The Ride</h2>
+        <p>Under a full moon, a witch races across the sky. Sparks crackle behind her broom while the owls keep watch.</p>
+        <a class="next" href="#ch2">Next chapter →</a>
+      </section>
+
+      <section id="ch2" class="chapter">
+        <h2>Chapter 2: The Wagon</h2>
+        <p>Below, a hay wagon creaks down the road. A couple waves at the witch as she zooms overhead. The trees whisper past.</p>
+        <a class="next" href="#ch3">Next chapter →</a>
+      </section>
+
+      <section id="ch3" class="chapter">
+        <h2>Chapter 3: The Storm</h2>
+        <p>Lightning flickers, the fog rolls in, and the pumpkins glow. Everyone gets home just before midnight.</p>
+        <a class="next" href="#ch1">Ride again ↺</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Team: [names] · GitHub: [usernames] · Undergraduate</p>
+  </footer>
+</body>
+</html>
