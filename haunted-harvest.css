@@ -8,7 +8,6 @@
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.35);
   padding: 30px;
   width: 75%;
   margin-left: 11%;
@@ -107,7 +106,7 @@ body::after {
 }
 
 .witch {
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 0;
   animation: fly 7.5s linear infinite;
@@ -130,7 +129,7 @@ body::after {
 .spark:nth-child(3) { animation-delay: 0.6s; }
 
 .wagon {
-  position: absolute;
+  position: fixed;
   bottom: 8%;
   left: 0;
   display: flex;
